@@ -4,23 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="img">
-                FOTO
             </div>
             <div id="form">
                 <h1>
                     Login
                 </h1>
                 <p>
-                    Seja bem-vindo(a) novamente. Faça login para acessar sua cota e poder fazer as configurações no seu ambiente.
+                    Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
                 </p>
                 <form action="login.php" method="post">
-                    
+                    <p class="input-digitar">
+                        <label for="iemail">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                        </label>
+                        <input type="email" name="email" id="iemail" placeholder="Digite seu email aqui">
+                    </p>
+                    <p class="input-digitar">
+                        <label for="ipass">
+                            <span class="material-symbols-outlined">
+                                passkey
+                            </span>
+                        </label>
+                        <input type="password" name="pass" id="ipass" placeholder="Digite sua senha aqui">
+                    </p>
+                    <input type="submit" value="Enviar">
+                    <input type="button" value="Esqueci minha senha "> 
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
                 </form>
             </div>
         </section>

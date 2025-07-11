@@ -7,3 +7,52 @@ Lilás: #5f2c82
 
 */
 
+:root{
+    --verde:#49a09d;
+    --lilas:#5f2c82;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--lilas);
+}
+
+main {
+   background-color: white;
+   margin: auto;
+   padding: 10px;
+   border-radius: 10px;
+   width: 50vw;
+   height: 65vh;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+main #img{
+    background-image: url(../imagens/imagem-fundo.jpg);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+  padding: 10px 0;
+}
+
+.input-digitar {
+    background-color: var(--lilas);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+
