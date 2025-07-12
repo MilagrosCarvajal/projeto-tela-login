@@ -7,46 +7,65 @@ Lilás: #5f2c82
 
 */
 
-:root{
-    --verde:#49a09d;
-    --lilas:#5f2c82;
+:root {
+    --verde: #49a09d;
+    --lilas: #5f2c82;
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--lilas);
+    width: 100vw;
+    height: 100vh;
 }
 
 main {
-   background-color: white;
-   margin: auto;
-   padding: 10px;
-   border-radius: 10px;
-   width: 50vw;
-   height: 65vh;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+    position: relative;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+
 }
 
-main #img{
-    background-image: url(../imagens/imagem-fundo.jpg);
+section {
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
 }
 
-h1{
+section>#img{
+    display: block;
+    background:#5f2c82 url(../imagens/imagem-fundo.jpg) no-repeat;
+    background-size: cover;
+    background-position:left center;
+    height: 170px;
+}
+section>#form{
+    display: block;
+    padding: 10px ;
+}
+
+h1 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-p {
-  padding: 10px 0;
+#texto {
+    padding: 10px 0;
 }
 
 .input-digitar {
@@ -55,4 +74,26 @@ p {
     margin-bottom: 5px;
 }
 
+.input-digitar-caixas {
+    margin: 2px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
 
+.input-button {
+    border: 2px solid #49a09d5f;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+#button-enviar {
+    background-color: var(--verde);
+    color: white;
+}
+
+#button-esqueci {
+    color: #244f4d;
+}

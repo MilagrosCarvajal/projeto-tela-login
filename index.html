@@ -16,7 +16,7 @@
                 <h1>
                     Login
                 </h1>
-                <p>
+                <p id="texto">
                     Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
                 </p>
                 <form action="login.php" method="post">
@@ -26,7 +26,7 @@
                                 person
                             </span>
                         </label>
-                        <input type="email" name="email" id="iemail" placeholder="Digite seu email aqui">
+                        <input type="email" name="email" id="iemail" class="input-digitar-caixas" placeholder="Digite seu email aqui">
                     </p>
                     <p class="input-digitar">
                         <label for="ipass">
@@ -34,13 +34,10 @@
                                 passkey
                             </span>
                         </label>
-                        <input type="password" name="pass" id="ipass" placeholder="Digite sua senha aqui">
+                        <input type="password" name="pass" id="ipass" class="input-digitar-caixas" placeholder="Digite sua senha aqui">
                     </p>
-                    <input type="submit" value="Enviar">
-                    <input type="button" value="Esqueci minha senha "> 
-                    <span class="material-symbols-outlined">
-                        mail
-                    </span>
+                    <input type="submit" value="Enviar" id="button-enviar" class="input-button">
+                    <input type="button" value="Esqueci minha senha "  id="button-esqueci" class="input-button"> 
                 </form>
             </div>
         </section>
