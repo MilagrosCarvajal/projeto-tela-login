@@ -41,10 +41,11 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
+
+    transform: translate(-50%, -50%);
     transition: width 0.5s, height 0.5s;
     transition-timing-function:ease;
 }
@@ -81,12 +82,13 @@ h1 {
 }
 
 .input-digitar-caixas {
-    transform: translatey(-8px);
     height: 100%;
     width:calc(100% - 35px);
     border-radius: 10px;
     border: none;
     padding: 10px;
+    transform: translatey(-8px);
+
 }
 
 .input-digitar span{

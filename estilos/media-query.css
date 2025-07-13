@@ -28,7 +28,7 @@
     }
     section{
         width: 60%;
-        height: 450px;
+        height: 400px;
     }
 
     section>#img{
@@ -39,6 +39,10 @@
     section>#form{
         float: left;
         width: 50%;
-        transform: translateY(70px);
+        transform: translateY(60px);
+    }
+
+    #texto{
+        padding: 15px 0;
     }
 }
