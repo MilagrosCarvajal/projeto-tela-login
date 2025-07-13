@@ -45,6 +45,8 @@ section {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function:ease;
 }
 
 section>#img{
@@ -61,30 +63,44 @@ section>#form{
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #texto {
     padding: 10px 0;
+    font-size:0.9em;
 }
 
 .input-digitar {
+    border: 2px solid var(--lilas);
     background-color: var(--lilas);
     border-radius: 10px;
     margin-bottom: 5px;
+    height: 40px;
+    width: 100%;
 }
 
 .input-digitar-caixas {
-    margin: 2px;
+    transform: translatey(-8px);
+    height: 100%;
+    width:calc(100% - 35px);
     border-radius: 10px;
     border: none;
     padding: 10px;
 }
 
+.input-digitar span{
+    color: white;
+    font-size: 1.6em;
+    padding: 5px;
+    width: 30px;
+    height: 40px;
+}
+
 .input-button {
     border: 2px solid #49a09d5f;
     width: 100%;
-    padding: 10px 0;
+    height: 40px;
     margin-bottom: 5px;
     border-radius: 10px;
 }
@@ -94,6 +110,17 @@ h1 {
     color: white;
 }
 
-#button-esqueci {
-    color: #244f4d;
+#button-esqueci a{
+    text-decoration: none;
+    color: #254e4c;
+}
+
+#button-esqueci span{
+    font-size: 0.8em;
+}
+
+#button-enviar:hover, #button-esqueci:hover{
+    cursor: pointer;
+    background-color: #9dc9c8;
+    color: #254e4c;
 }
